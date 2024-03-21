@@ -1,0 +1,13 @@
+#see the router archittecture from mikrotik web page 
+#mikrotik.com -> hardware -> search:rb760igs -> architecture:mmips
+#goto download option and router os select routeros-7.14.1-mmips.npk file 
+# with stable version and also netinstallcli(linux)
+#insert ethernet cable in wan port
+#goto /etc/netplan and edit .yaml file for your server 192.168.0.2
+#give command
+murtaza@taib:~$ sudo ./netinstall-cli -a 192.168.0.1 -i enp7s0 -r 
+                ./routeros-7.14.1-mmips.npk
+ 
+#client ip is here 192.168.0.1
+#reset router
+#enjoy 
